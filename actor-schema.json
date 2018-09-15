@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Actor",
+  "description": "A actor from the crawled catalog",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Unique identifier for a actor",
+      "type": "integer"
+    },
+    "name": {
+      "description": "Name of the actor",
+      "type": "string"
+    },
+    "wiki": {
+      "description": "Wikipedia link to see more details about the actor (URL)",
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "release"
+  ]
+}

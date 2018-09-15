@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Cinema",
+  "description": "A place where people go to see movies",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Unique identifier for the cinema",
+      "type": "integer"
+    },
+    "name": {
+      "description": "Name of the cinema",
+      "type": "string"
+    },
+    "location": {
+      "description": "Locations of the cinema (Location Model)",
+      "type": "array"
+    }
+  },
+  "required": [
+    "id",
+    "name"
+  ]
+}

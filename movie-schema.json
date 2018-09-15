@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Movie",
+  "description": "A movie from the crawled catalog",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Unique identifier for a movie",
+      "type": "integer"
+    },
+    "name": {
+      "description": "Name of the movie",
+      "type": "string"
+    },
+    "genre": {
+      "description": "Genre of the movie (Genre Model)",
+      "type": "array"
+    },
+    "duration": {
+      "description": "Length of the movie in minutes",
+      "type": "integer"
+    },
+    "keywords": {
+      "description": "Specific keywords to improve search engine visibility (Strings)",
+      "type": "array"
+    },
+    "stars": {
+      "description": "Artists that featured in the movie (Actor Model)",
+      "type": "array"
+    },
+    "directors": {
+      "description": "The director(s) of the movie (Director Model)",
+      "type": "array"
+    },
+    "release": {
+      "description": "Date the movie was released",
+      "type": "string"
+    },
+    "ratings": {
+      "description": "Average ratings of the movie",
+      "type": "integer"
+    },
+    "trailer": {
+      "description": "Link to preview the movie",
+      "type": "string"
+    },
+    "showing": {
+      "description": "Cinemas/Times where the movie is currently showing",
+      "type": "array"
+    },
+    "country": {
+      "description": "Country the movie was made (Country Model)",
+      "type": "object"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "release"
+  ]
+}

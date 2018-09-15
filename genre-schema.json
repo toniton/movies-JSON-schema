@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Genre",
+  "description": "Typically describes the type of movie",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Unique identifier for a genre",
+      "type": "integer"
+    },
+    "name": {
+      "description": "Name of the genre",
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "name"
+  ]
+}

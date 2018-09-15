@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Country",
+  "description": "A region that is identified as a distinct national",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Unique identifier for a country",
+      "type": "integer"
+    },
+    "name": {
+      "description": "Name of the country",
+      "type": "string"
+    },
+    "timezone": {
+      "description": "The timezone of country",
+      "type": "string"
+    },
+    "code": {
+      "description": "The country code/abbreviation (2 - 3 letters)",
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "name"
+  ]
+}

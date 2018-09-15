@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Location",
+  "description": "A Location of a cinema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Unique identifier for a location",
+      "type": "integer"
+    },
+    "name": {
+      "description": "Name of the location",
+      "type": "string"
+    },
+    "address": {
+      "description": "Genre of the movie (Address Model)",
+      "type": "object"
+    },
+    "cinema": {
+      "description": "Cinema this location belongs to",
+      "type": "integer"
+    },
+    "geocoordinates": {
+      "description": "GeoJSON that can help me locate this cinema",
+      "type": "array"
+    }
+  },
+  "required": [
+    "id",
+    "name"
+  ]
+}

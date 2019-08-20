@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Director",
   "description": "A person who directs a movie",
   "type": "object",
@@ -19,7 +19,6 @@
   },
   "required": [
     "id",
-    "name",
-    "release"
+    "name"
   ]
 }

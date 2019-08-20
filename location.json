@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Location",
   "description": "A Location of a cinema",
   "type": "object",
@@ -13,14 +13,14 @@
       "type": "string"
     },
     "address": {
-      "description": "Genre of the movie (Address Model)",
+      "description": "Address of this location (Address Model)",
       "type": "object"
     },
     "cinema": {
       "description": "Cinema this location belongs to",
       "type": "integer"
     },
-    "geocoordinates": {
+    "geoCoordinates": {
       "description": "GeoJSON that can help me locate this cinema",
       "type": "array"
     }

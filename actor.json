@@ -1,7 +1,7 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Actor",
-  "description": "A actor from the crawled catalog",
+  "description": "An actor from the crawled catalog",
   "type": "object",
   "properties": {
     "id": {
@@ -19,7 +19,6 @@
   },
   "required": [
     "id",
-    "name",
-    "release"
+    "name"
   ]
 }

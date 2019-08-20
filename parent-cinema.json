@@ -1,0 +1,32 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "title": "ParentCinema",
+    "description": "Main cinema, out of which others are branched from",
+    "type": "object",
+    "properties": {
+      "id": {
+        "description": "Unique identifier for the parent cinema",
+        "type": "integer"
+      },
+      "name": {
+        "description": "Name of the parent cinema, ideally child cinemas should share this name",
+        "type": "string"
+      },
+      "phone": {
+        "description": "Contact phone number of the parent cinema",
+        "type": "string"
+      },
+      "email": {
+        "description": "Email address of the parent cinema",
+        "type": "string"
+      },
+      "address": {
+        "description": "Main office address of the parent cinema",
+        "type": "integer"
+      }
+    },
+    "required": [
+      "id",
+      "name"
+    ]
+}

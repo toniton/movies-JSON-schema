@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "ShowTime",
   "description": "A time where a specific movie is available in a specific location of a cinema",
   "type": "object",
@@ -8,28 +8,32 @@
       "description": "Unique identifier for the showtime",
       "type": "integer"
     },
-    "cinema_id": {
+    "cinema": {
       "description": "Cinema where this showtime is available",
       "type": "integer"
     },
-    "location_id": {
-      "description": "Location where this showtime is available",
-      "type": "integer"
-    },
-    "movie_id": {
+    "movie": {
       "description": "Movie that would be showing at this showtime",
       "type": "integer"
     },
+    "weekday": {
+      "type": "string",
+      "description": "The weekday which this showtime airs"
+    },
     "time": {
-      "description": "The date/time when this movie would be showing",
+      "description": "The time when this showtime airs",
+      "type": "string"
+    },
+    "date": {
+      "description": "The date when this movie would be showing",
       "type": "string"
     }
   },
   "required": [
     "id",
-    "cinema_id",
-    "location_id",
-    "movie_id",
+    "cinema",
+    "movie",
+    "day",
     "time"
   ]
 }

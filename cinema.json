@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Cinema",
   "description": "A place where people go to see movies",
   "type": "object",
@@ -11,6 +11,10 @@
     "name": {
       "description": "Name of the cinema",
       "type": "string"
+    },
+    "parentCinema": {
+      "description": "The main cinema out of which this cinema is branched from. (ParentCinema model)",
+      "type": "object"
     },
     "location": {
       "description": "Locations of the cinema (Location Model)",

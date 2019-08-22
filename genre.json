@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Genre",
   "description": "Typically describes the type of movie",
   "type": "object",
@@ -10,6 +10,10 @@
     },
     "name": {
       "description": "Name of the genre",
+      "type": "string"
+    },
+    "description": {
+      "description": "Brief description of the genre",
       "type": "string"
     }
   },
